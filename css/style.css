@@ -106,7 +106,7 @@ body{
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
     padding: 25px 0;
     background-color: var(--cor_principal);
 }
@@ -138,4 +138,20 @@ body{
     background-color: #380062;
     color: white;
     font-weight: bold;
+}
+
+.sobre{
+    height: 100vh;
+    gap: 150px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 35px;
 }
