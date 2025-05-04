@@ -155,3 +155,44 @@ body{
     justify-content: flex-start;
     gap: 35px;
 }
+
+.audiencia{
+    height: 100vh;
+    gap: 150px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.audiencia_card{
+    padding: 50px 150px;
+    padding-left: 50px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: black;
+    gap: 20px;
+}
+
+.audiencia_card div{
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+}
+
+.audiencia_card div h1{
+    font-size: 62px;
+    color: var(--cor_principal);
+}
+
+.audiencia_card div p{
+    font-weight: bold;
+    font-size: 18px;
+}
