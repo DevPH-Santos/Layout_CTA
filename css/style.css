@@ -13,16 +13,33 @@
 
 }
 
+/*estilos repetidos*/
+
 h2{
     font-size: 18px;
     font-weight: bold;
 }
+
+.btnCTA{
+    background-color: var(--cor_principal);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 50px;
+}
+
+span{
+    color: var(--cor_principal);
+}
+
+/*estilos repetidos*/
 
 body{
     width: 100%;
     height: 100vh;
     padding: 0 360px;
     background-color: var(--cor_fundo);
+    color: white;
 }
 
 .hero{
@@ -31,4 +48,12 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    gap: 106px;
+}
+
+.hero div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 52px;
 }
