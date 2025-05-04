@@ -98,3 +98,44 @@ body{
 .card p{
     text-align: center;
 }
+
+.CTA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 150px;
+    padding: 25px 0;
+    background-color: var(--cor_principal);
+}
+
+.input_CTA{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input_CTA input{
+    border-radius: 6px;
+    padding-left: 10px;
+    width: 450px;
+    height: 45px;
+    border: none;
+    outline: none;
+}
+
+.input_CTA button{
+    position: absolute;
+    border: none;
+    outline: none;
+    right: 0;
+    padding: 0 20px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #380062;
+    color: white;
+    font-weight: bold;
+}
