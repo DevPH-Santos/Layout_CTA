@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+    --cor_principal: #6500B3;
+    --cor_fundo: #202020;
+    --cor_sombra: #C376FF;
+
+}
+
+h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0 360px;
+    background-color: var(--cor_fundo);
+}
