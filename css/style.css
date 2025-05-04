@@ -100,6 +100,7 @@ body{
 }
 
 .CTA{
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +135,7 @@ body{
     padding: 0 20px;
     height: 45px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 0 6px 6px 0;
     background-color: #380062;
     color: white;
     font-weight: bold;
@@ -158,7 +159,7 @@ body{
 
 .audiencia{
     height: 100vh;
-    gap: 150px;
+    gap: 50px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -195,4 +196,52 @@ body{
 .audiencia_card div p{
     font-weight: bold;
     font-size: 18px;
+}
+
+form{
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 100%;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+}
+
+.campos{
+    margin: 25px 0;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 500px 500px;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form label input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--cor_principal);
+    outline: none;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+form button{
+    margin: 20px 0;
+    height: 40px;
+    width: 214px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--cor_principal);
+    color: white;
+    cursor: pointer;
 }
