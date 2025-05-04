@@ -26,10 +26,12 @@ h2{
     text-decoration: none;
     border-radius: 20px;
     padding: 10px 50px;
+    font-weight: bold;
 }
 
 span{
     color: var(--cor_principal);
+    font-weight: bold;
 }
 
 /*estilos repetidos*/
@@ -43,7 +45,7 @@ body{
 }
 
 .hero{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,4 +58,43 @@ body{
     flex-direction: column;
     align-items: flex-start;
     gap: 52px;
+}
+
+.section_cards{
+    gap: 30px;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.card{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.card div{
+    border-radius: 20px;
+    background-color: var(--cor_principal);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 50px;
+    height: 420px;
+}
+
+.card p{
+    text-align: center;
 }
