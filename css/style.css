@@ -117,9 +117,9 @@ body {
 }
 
 .input_CTA {
-    width: 100%;
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -340,5 +340,31 @@ form button:hover {
     
     .audiencia_card div p {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .input_CTA input {
+        border-radius: 6px;
+        padding-left: 10px;
+        width: 350px;
+        height: 45px;
+        border: none;
+        outline: none;
+    }
+    
+    .input_CTA button {
+        position: absolute;
+        border: none;
+        outline: none;
+        right: 0;
+        padding: 0 20px;
+        height: 45px;
+        cursor: pointer;
+        border-radius: 0 6px 6px 0;
+        background-color: #380062;
+        color: white;
+        font-weight: bold;
     }
 }
