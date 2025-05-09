@@ -112,12 +112,12 @@ body {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    /*margin: 200px 0;*/
     padding: 25px 0;
     background-color: var(--cor_principal);
 }
 
 .input_CTA {
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -319,7 +319,7 @@ form button:hover {
     }
 
     .card p {
-        max-width: 50%;
+        max-width: 80%;
     }
 }
 
