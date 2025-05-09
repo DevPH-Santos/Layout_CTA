@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,12 +15,12 @@
 
 /*estilos repetidos*/
 
-h2{
+h2 {
     font-size: 18px;
     font-weight: bold;
 }
 
-.btnCTA{
+.btnCTA {
     background-color: var(--cor_principal);
     color: white;
     text-decoration: none;
@@ -29,38 +29,42 @@ h2{
     font-weight: bold;
 }
 
-span{
+span {
     color: var(--cor_principal);
     font-weight: bold;
 }
 
+.img {
+    width: 350px;
+}
+
 /*estilos repetidos*/
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background-color: var(--cor_fundo);
     color: white;
 }
 
-.hero{
+.hero {
     padding: 0 360px;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 106px;
+    gap: 50px;
 }
 
-.hero div{
+.hero div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 52px;
 }
 
-.section_cards{
+.section_cards {
     gap: 30px;
     padding: 0 360px;
     height: 100vh;
@@ -71,13 +75,13 @@ body{
     justify-content: center;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: space-around;
     gap: 25px;
 }
 
-.card{
+.card {
     gap: 30px;
     display: flex;
     align-items: center;
@@ -85,7 +89,7 @@ body{
     flex-direction: column;
 }
 
-.card div{
+.card div {
     border-radius: 20px;
     background-color: var(--cor_principal);
     display: flex;
@@ -93,14 +97,14 @@ body{
     text-align: center;
     justify-content: center;
     padding: 0 50px;
-    height: 420px;
+    height: 150px;
 }
 
-.card p{
+.card p {
     text-align: center;
 }
 
-.CTA{
+.CTA {
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -108,18 +112,18 @@ body{
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    margin-bottom: 130px;
+    /*margin: 200px 0;*/
     padding: 25px 0;
     background-color: var(--cor_principal);
 }
 
-.input_CTA{
+.input_CTA {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.input_CTA input{
+.input_CTA input {
     border-radius: 6px;
     padding-left: 10px;
     width: 450px;
@@ -128,7 +132,7 @@ body{
     outline: none;
 }
 
-.input_CTA button{
+.input_CTA button {
     position: absolute;
     border: none;
     outline: none;
@@ -142,24 +146,24 @@ body{
     font-weight: bold;
 }
 
-.sobre{
+.sobre {
     height: 100vh;
     padding: 0 360px;
-    gap: 150px;
+    gap: 70px;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sobre div{
+.sobre div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 35px;
 }
 
-.audiencia{
+.audiencia {
     height: 100vh;
     padding: 0 360px;
     gap: 50px;
@@ -170,7 +174,7 @@ body{
     justify-content: center;
 }
 
-.audiencia_card{
+.audiencia_card {
     padding: 50px 150px;
     padding-left: 50px;
     border-radius: 20px;
@@ -183,7 +187,7 @@ body{
     gap: 20px;
 }
 
-.audiencia_card div{
+.audiencia_card div {
     max-width: 550px;
     display: flex;
     align-items: center;
@@ -191,17 +195,17 @@ body{
     gap: 65px;
 }
 
-.audiencia_card div h1{
+.audiencia_card div h1 {
     font-size: 62px;
     color: var(--cor_principal);
 }
 
-.audiencia_card div p{
+.audiencia_card div p {
     font-weight: bold;
     font-size: 18px;
 }
 
-form{
+form {
     border-radius: 10px;
     padding: 50px;
     max-width: 100%;
@@ -219,7 +223,7 @@ form{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-form label{
+form label {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -254,5 +258,87 @@ form button {
 }
 
 form button:hover {
-    background-color: #5200a1; /* ajuste conforme sua paleta */
+    background-color: #5200a1;
+    /* ajuste conforme sua paleta */
+}
+
+@media screen and (max-width:1440px) {
+
+    .hero,
+    .section_cards,
+    .sobre,
+    .audiencia {
+        padding: 0 250px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+
+    .hero,
+    .section_cards,
+    .sobre,
+    .audiencia {
+        padding: 0 100px;
+    }
+
+    .cards {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    }
+}
+
+@media screen and (max-width:920px) {
+
+    body {
+        gap: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero:first-child .img {
+        display: none;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero,
+    .section_cards,
+    .sobre,
+    .audiencia {
+        padding: 25px;
+        height: auto;
+    }
+
+    .section_cards {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card p {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .audiencia_card {
+        padding: 50px;
+        gap: 50px;
+    }
+    
+    .audiencia_card div {
+        max-width: 100%;
+        gap: 30px;
+    }
+    
+    .audiencia_card div h1 {
+        font-size: 45px;
+    }
+    
+    .audiencia_card div p {
+        font-size: 16px;
+    }
 }
