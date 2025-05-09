@@ -39,12 +39,12 @@ span{
 body{
     width: 100%;
     height: 100vh;
-    padding: 0 360px;
     background-color: var(--cor_fundo);
     color: white;
 }
 
 .hero{
+    padding: 0 360px;
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -62,6 +62,7 @@ body{
 
 .section_cards{
     gap: 30px;
+    padding: 0 360px;
     height: 100vh;
     max-width: 100%;
     display: flex;
@@ -143,6 +144,7 @@ body{
 
 .sobre{
     height: 100vh;
+    padding: 0 360px;
     gap: 150px;
     max-width: 100%;
     display: flex;
@@ -159,6 +161,7 @@ body{
 
 .audiencia{
     height: 100vh;
+    padding: 0 360px;
     gap: 50px;
     max-width: 100%;
     display: flex;
@@ -209,14 +212,11 @@ form{
     justify-content: center;
 }
 
-.campos{
+.campos {
     margin: 25px 0;
-    justify-content: space-around;
-    align-items: center;
-    justify-content: center;
     display: grid;
     gap: 20px;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 form label{
@@ -225,23 +225,34 @@ form label{
     gap: 5px;
 }
 
-form label input{
+form label input {
     width: 100%;
-    height: 40px;
+    height: 45px;
     border: 2px solid var(--cor_principal);
     outline: none;
-    padding-left: 20px;
-    border-radius: 10px;
+    padding: 0 15px;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
-form button{
-    margin: 20px 0;
-    height: 40px;
-    width: 214px;
+form input::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+
+form button {
+    margin: 30px auto 0;
+    height: 45px;
+    width: 220px;
     border-radius: 10px;
     border: none;
-    outline: none;
     background-color: var(--cor_principal);
     color: white;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #5200a1; /* ajuste conforme sua paleta */
 }
