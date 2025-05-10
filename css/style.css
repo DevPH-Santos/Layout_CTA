@@ -341,10 +341,7 @@ form button:hover {
     .audiencia_card div p {
         font-size: 16px;
     }
-}
 
-@media screen and (max-width: 400px) {
-    
     .input_CTA input {
         border-radius: 6px;
         padding-left: 10px;
@@ -367,4 +364,5 @@ form button:hover {
         color: white;
         font-weight: bold;
     }
+
 }
